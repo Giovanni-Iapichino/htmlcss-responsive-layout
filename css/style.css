@@ -97,10 +97,6 @@ header {
   display: none;
 }
 
-#card {
-  background-color: white;
-}
-
 .card-title-description {
   color: black;
   font-weight: bold;
@@ -128,7 +124,7 @@ header {
   padding-bottom: 30px;
 }
 
-i {
+.button-icon {
   padding: 4px;
   background-color: white;
   border-radius: 10%;
@@ -136,7 +132,6 @@ i {
 
 .icon span {
   display: none;
-  background-color: white;
 }
 
 .banner {
@@ -153,6 +148,7 @@ i {
   width: 400px;
   padding-top: 30px;
   padding-bottom: 30px;
+  float: none;
 }
 
 .recipe {
@@ -169,6 +165,8 @@ i {
 footer {
   background-color: #7c69a4;
   color: white;
+  padding: 10px;
+  justify-content: center;
 }
 
 .copyright {
@@ -179,12 +177,13 @@ footer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   padding-top: 20px;
 }
 
 .footer-bottom {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -234,7 +233,14 @@ footer {
     width: calc(100% / 3);
   }
 
-  i {
+  .recipe-tiramisù {
+    float: left;
+    margin: 5px;
+    clear: both;
+    display: table;
+  }
+
+  .button-icon {
     padding: 4px 20px;
   }
 
@@ -243,6 +249,8 @@ footer {
     padding-bottom: 20px;
   }
 }
+
+/* DISPOSITIVI LARGE */
 
 @media screen and (min-width: 992px) {
   .main-title {
@@ -278,9 +286,22 @@ footer {
     display: inline-block;
   }
 
+  .button-icon {
+    padding: 10px 30px;
+  }
+
   footer {
     display: flex;
     justify-content: space-between;
     align-content: center;
+  }
+
+  .footer-top {
+    width: auto;
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    width: auto;
   }
 }
