@@ -67,3 +67,12 @@ ul {
 .col-1-6 {
   width: calc(100% / 6);
 }
+
+.header-title {
+  font-family: "Nerko One", cursive;
+  font-weight: 600;
+  font-style: normal;
+  color: #ff9614;
+  font-size: 3rem;
+  text-align: center;
+}
