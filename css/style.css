@@ -38,6 +38,7 @@ ul {
   flex-wrap: wrap;
   row-gap: 2rem;
   width: 100%;
+  background-color: white;
 }
 
 h1,
@@ -55,6 +56,11 @@ img {
 
 /* HEADER */
 
+header {
+  background-color: white;
+  align-items: center;
+}
+
 .header-title {
   font-family: "Nerko One", cursive;
   font-weight: 600;
@@ -63,6 +69,7 @@ img {
   font-size: 3rem;
   text-align: center;
   padding-bottom: 3rem;
+  padding: 30px;
 }
 
 /* MAIN */
@@ -83,6 +90,10 @@ img {
 }
 
 .hidden {
+  font-weight: bold;
+  font-style: normal;
+  color: #4d3874;
+  font-size: 2rem;
   display: none;
 }
 
@@ -107,6 +118,7 @@ img {
 
 .img-tiramisù {
   margin: 0;
+  display: block;
 }
 
 .icon {
@@ -118,6 +130,8 @@ img {
 
 i {
   padding: 4px;
+  background-color: white;
+  border-radius: 10%;
 }
 
 .icon span {
@@ -172,6 +186,7 @@ footer {
 .footer-bottom {
   width: 100%;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .link-list {
@@ -179,4 +194,93 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
+}
+
+/* RESPONSIVE */
+
+/* MEDIUM DISPOSITIVE */
+
+@media screen and (min-width: 768px) {
+  .header-title {
+    text-align: left;
+  }
+
+  .dessert {
+    padding-top: 30px;
+  }
+
+  .main-title {
+    font-size: 2.5rem;
+  }
+
+  .hidden {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  .title {
+    display: flex;
+    gap: 3px;
+  }
+
+  .preparation-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #card li {
+    display: inline-block;
+    padding-right: 40px;
+    width: calc(100% / 3);
+  }
+
+  i {
+    padding: 4px 20px;
+  }
+
+  .banner {
+    display: block;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main-title {
+    font-size: 2.8rem;
+  }
+
+  .hidden {
+    font-size: 2.8rem;
+  }
+
+  #card li {
+    width: 100%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .preparation-list {
+    display: flex;
+  }
+
+  .card-media {
+    width: 70%;
+  }
+
+  .card-content {
+    width: 30%;
+  }
+
+  .icon span {
+    display: inline-block;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
 }
