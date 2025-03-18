@@ -68,6 +68,17 @@ ul {
   width: calc(100% / 6);
 }
 
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* HEADER */
+
 .header-title {
   font-family: "Nerko One", cursive;
   font-weight: 600;
@@ -75,4 +86,26 @@ ul {
   color: #ff9614;
   font-size: 3rem;
   text-align: center;
+  padding-bottom: 3rem;
 }
+
+/* MAIN */
+
+.dessert {
+  font-weight: 600;
+  font-style: normal;
+  color: #c5c2bf;
+  padding-bottom: 20px;
+}
+
+.tiramisù {
+  font-weight: bold;
+  font-style: normal;
+  color: #4d3874;
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+/* FOOTER */
