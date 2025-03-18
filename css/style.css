@@ -8,6 +8,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f5f3;
 }
 
 img {
@@ -27,8 +28,8 @@ ul {
   max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .row {
@@ -72,7 +73,7 @@ img {
   padding-bottom: 20px;
 }
 
-.tiramisù {
+.main-title {
   font-weight: bold;
   font-style: normal;
   color: #4d3874;
@@ -84,18 +85,47 @@ img {
   display: none;
 }
 
+#card {
+  background-color: white;
+}
+
 .card-title-description {
   color: black;
   font-weight: bold;
   font-size: 1.5rem;
-  padding-top: 30px;
   padding-bottom: 20px;
+  margin-left: 20px;
 }
 
 .preparation-list {
   line-height: 2.5rem;
   font-size: 19px;
+  padding-bottom: 60px;
+  margin-left: 20px;
+}
+
+.img-tiramisù {
+  margin: 0;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
   padding-bottom: 30px;
+}
+
+i {
+  padding: 4px;
+}
+
+.icon span {
+  display: none;
+  background-color: white;
+}
+
+.banner {
+  display: none;
 }
 
 /* FOOTER */
