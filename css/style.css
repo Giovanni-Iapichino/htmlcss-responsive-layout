@@ -308,4 +308,8 @@ footer {
   .footer-bottom {
     width: auto;
   }
+
+  .card-title-description {
+    padding-top: 30px;
+  }
 }
