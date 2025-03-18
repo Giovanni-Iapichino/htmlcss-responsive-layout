@@ -235,7 +235,11 @@ footer {
 
   .recipe-tiramisù {
     float: left;
-    margin: 5px;
+    margin-right: 10px;
+  }
+
+  .clear-fix::after {
+    content: "";
     clear: both;
     display: table;
   }
